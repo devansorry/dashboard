@@ -1,0 +1,44 @@
+.container {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    width: 80%;
+}
+
+.container > * {
+    padding: 20px;
+    flex: 1 0 40%;
+    text-align: center;
+}
+
+.container .heading {
+    color: rgb(242, 244, 251);
+    font-size: 35px;
+    line-height: 40px;
+    margin: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, monospace;
+}
+
+.container .desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.container > div:nth-child(odd) {
+    text-align: right;
+}
+
+.container > div:nth-child(even) {
+    text-align: left;
+}
+
+.container img {
+    height: 150px;
+    margin: 20px;
+}
