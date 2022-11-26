@@ -1,0 +1,7 @@
+.serverList {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Courier;
+    color: rgb(255, 255, 255);
+}
