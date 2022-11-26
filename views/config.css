@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../public/css/ejs/config.css">
+    <meta charset="utf-8">
+    <title>config</title>
+  </head>
+  <body>
+    <div id="info">
+      <p>Ansorry</p>
+      <div onclick="updateCommand(getElementById('command_id'))">
+      <% for(let i=0; i<data.length; i++) { %>
+        <p>Command:</p> <p id="command_name" contenteditable><%= data[i]['name'] %></p>
+        <p id="command_id"><%= data[i]['id'] %></p>
+        <% if(data[i]['type'] == 1) { %>
+            <p>type: Chat</p>
+        <% } %>
+        <% if(data[i]['type'] == 2) { %>
+            <p>type: User</p>
+        <% } %>
+        <% if(data[i]['type'] == 3) { %>
+            <p>type: Message</p>
+        <% } %>
+        <p>Description: <%= data[i]['description'] %></p>
+      <% } %>
+      </div>
+      <p>Guilds</p>
+      <div>
+      <% if(guild == undefined) { %>
+        <p>Bot is not in guild</p>
+      <% } %>
+
+      <% if(guild != undefined) { %>
+        <p>Bot is in guild</p>
+      <% } %>
+      </div>
+    </div>
+
+  </body>
+  <script type="application/javascript" src="../public/commands.js"></script>
+</html>
