@@ -11,6 +11,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname + "/public")));
+app.use(express.static(path.join(__dirname + "/premium.html")));
 
 app.get("/config/:id", async (request, response) => {
   let configData = await getGuildCommands(request.params.id);
