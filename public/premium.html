@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/container.css" />
+  <link rel="stylesheet" href="css/servers.css" />
+  <meta charset="utf-8" />
+  <title>Ansorry - Premium</title>
+  <body>
+    <nav class="nav">
+      <div class="logo">Ansorry</div>
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/premium.html">Premium</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="button"
+            href="https://discord.com/api/oauth2/authorize?client_id=830892045258063872&redirect_uri=http%3A%2F%2Flocalhost%3A53134&response_type=token&scope=identify%20guilds"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="info" id="info">
+        <p>Premium</p>
+    </div>
+      <div class="card">
+        <div class="heading">
+          <h2 class="type">Lifetime plan</h2>
+          <h1 class="price">89.90 <span class="text-neutral">$</span></h1>
+          <p class="payment text-neutral">Single payment</p>
+        </div>
+        <div class="separator"></div>
+        <ul class="howtonamethis">
+          <li><span class="text-neutral">Biggest</span> savings</li>
+          <li>
+            <span class="text-neutral">Fully</span> refundable
+            <span class="text-neutral">for 7 days</span>
+          </li>
+          <li>
+            Transferable <span class="text-neutral">to another server</span>
+          </li>
+          <li>Custom bot <span class="text-neutral">option included</span></li>
+        </ul>
+        <div class="separator"></div>
+        <button class="button">Get the Lifetime plan</button>
+      </div>
+
+      <style>
+        .card {
+          grid-template-columns: repeat(3, 1fr);
+          display: flex;
+          font-family: Mulish;
+          flex-direction: column;
+          width: 360px;
+          background-color: #2f3136;
+          padding: 50px 40px;
+          color: white;
+          gap: 30px;
+          border-radius: 10px;
+        }
+
+        .card > .heading > * {
+          margin: 0;
+        }
+
+        .card > .heading > .price {
+          font-weight: 800;
+        }
+
+        .card > .heading {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+      </style>
+  </body>
+</html>
